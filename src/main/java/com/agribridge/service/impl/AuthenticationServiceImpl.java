@@ -157,7 +157,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
     }
 
     public String buildMailUrl(HttpServletRequest request){
-        return request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + request.getContextPath();
+        return "http" + "://" + "67.217.58.16" + ":" + "7081" + request.getContextPath();
     }
     private void validateUserUniqueness(RegisterPayload registerPayload) {
         if (userRepository.existsByUsername(registerPayload.getUsername())) {
