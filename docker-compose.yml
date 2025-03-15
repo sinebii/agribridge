@@ -6,7 +6,7 @@ services:
     container_name: agribridge_app
     restart: always
     ports:
-      - "7080:7080"
+      - "7081:7081"
     environment:
       - SPRING_DATASOURCE_URL=${DB_URL}
       - SPRING_DATASOURCE_USERNAME=${DB_CREDENTIALS_USR}
