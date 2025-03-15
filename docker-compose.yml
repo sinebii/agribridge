@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: sinebii/agribridge:latest
+    container_name: agribridge_app
+    restart: always
+    ports:
+      - "7080:7080"
+    environment:
+      - SPRING_DATASOURCE_URL=${DB_URL}
+      - SPRING_DATASOURCE_USERNAME=${DB_CREDENTIALS_USR}
+      - SPRING_DATASOURCE_PASSWORD=${DB_CREDENTIALS_PSW}

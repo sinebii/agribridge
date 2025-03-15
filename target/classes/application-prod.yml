@@ -1,0 +1,53 @@
+server:
+  port: 7081
+spring:
+  application:
+    name: agribridge
+  datasource:
+    url: jdbc:mysql://66.45.225.237:3306/agribridge?useSSL=true&serverTimezone=UTC
+    username: sinebi
+    password: PassWord@34
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    banner:
+      location: classpath:banner.txt
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sinebii37@gmail.com
+    password: nmir warl gglf zynw
+    default-encoding: UTF-8
+    properties:
+      mail:
+        mime:
+          charset: UTF-8
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+application:
+  title: Agribridge Backend API V1.0 Production Environment
+  version: 1.0.2
+  description: Agribridge Backend API V2
+
+app:
+  jwtSecret: a47a8d4af8c8ebc1fa3ad560cc9621dc8372a0be5fd5ed3261238b041f8a1cdc
+  jwt-expiration-millisecons: 86400000
+
+
+
+
+
+
+
+
+
