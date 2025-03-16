@@ -4,9 +4,9 @@ spring:
   application:
     name: agribridge
   datasource:
-    url: jdbc:mysql://66.45.225.237:3306/agribridge?useSSL=true&serverTimezone=UTC
-    username: sinebi
-    password: PassWord@34
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
